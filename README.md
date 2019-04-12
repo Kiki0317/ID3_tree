@@ -348,8 +348,10 @@ class TreeBuilder():
         
         return node
 
-class TreeNode(): #define attributes of each node
-    def __init__(self,val,left = None , right = None ,parent = None, bad_rate = 0, group_entropy = 0, group_size = 0, feature = "", threshold = None, node_id = None):  #取等于=设置default value
+# define attributes of each node
+class TreeNode(): 
+
+    def __init__(self,val,left = None , right = None ,parent = None, bad_rate = 0, group_entropy = 0, group_size = 0, feature = "", threshold = None, node_id = None):  
         self.val = val
         self.left = left
         self.right = right
